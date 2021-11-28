@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FinancialManager</string>
+    <string name="outcomes_incomes">outcomes/incomes</string>
+    <string name="sum">summary</string>
+</resources>
