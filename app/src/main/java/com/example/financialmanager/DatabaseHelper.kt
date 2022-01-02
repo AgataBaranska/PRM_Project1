@@ -151,6 +151,7 @@ class DatabaseHelper(context: Context?) : SQLiteOpenHelper(
         } finally {
             cursor.close()
         }
+        list.sortDescending()
         return list
     }
 

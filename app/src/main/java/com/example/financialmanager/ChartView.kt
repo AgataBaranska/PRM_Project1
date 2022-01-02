@@ -54,8 +54,8 @@ class ChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
             paint.textSize = 40f
             paint.strokeWidth = 10f
 
-            var  previousPointX:Float = 0f
-            var previousPointY:Float = 0f
+            var previousPointX: Float = 0f
+            var previousPointY: Float = 0f
 
             for ((day, amount) in dataMap) {
                 //horizontal axis scale lines
@@ -95,7 +95,7 @@ class ChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
                 //values
                 var currentPointX = day * ratDay + borderAxisDistance
                 var currentPointY = horizontalChartAxisY - (amount * ratAmount).toFloat()
-                if(previousPointX == 0f||previousPointY == 0f) {
+                if (previousPointX == 0f || previousPointY == 0f) {
                     previousPointX = borderAxisDistance
                     previousPointY = currentPointY
                 }
@@ -112,7 +112,7 @@ class ChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
                         paint
                     )
                     paint.color = Color.GRAY
-                //previousPointY below and currentPointY below axis x line
+                    //previousPointY below and currentPointY below axis x line
                 } else if (currentPointY > horizontalChartAxisY && previousPointY > horizontalChartAxisY) {
                     paint.color = Color.RED
                     canvas?.drawLine(
@@ -124,7 +124,7 @@ class ChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
                     )
                     paint.color = Color.GRAY
 
-                //previousPointY above and currentPointY below the axis x line
+                    //previousPointY above and currentPointY below the axis x line
                 } else if (currentPointY > horizontalChartAxisY && previousPointY <= horizontalChartAxisY) {
                     paint.color = Color.GREEN
                     val a = (currentPointX - previousPointX) / (currentPointY - previousPointY)
@@ -187,6 +187,12 @@ class ChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
                 horizontalChartAxisY,
                 paint
             )
+            canvas?.drawText(
+                "days",
+                horGraphWidth + borderAxisDistance/3,
+                horizontalChartAxisY,
+                paint
+            )
 
             //vertical chart axis
             canvas?.drawLine(
@@ -194,6 +200,12 @@ class ChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
                 verGraphHeight,
                 borderAxisDistance,
                 borderAxisDistance,
+                paint
+            )
+            canvas?.drawText(
+                "amount",
+                borderAxisDistance/2,
+                borderAxisDistance/2,
                 paint
             )
 
