@@ -50,7 +50,7 @@ data class Transaction(
     }
 
     override fun compareTo(otherTransaction: Transaction): Int {
-       if(otherTransaction ===this)return 0
+
 
         val splitTab = this.date!!.split('-')
         val year = splitTab[0].toInt()

@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity(), RecyclerAdapter.OnItemClickListener,
                 )
             }
         }
+
         transactions.sort()
         recyclerView.adapter = RecyclerAdapter(transactions, this, this)
         recyclerView.layoutManager = LinearLayoutManager(this)
