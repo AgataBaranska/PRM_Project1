@@ -81,7 +81,7 @@ class DatabaseHelper(context: Context?) : SQLiteOpenHelper(
 
     fun getMonthlyIncome(month: String): Double {
         val db = this.readableDatabase
-        val query = "SELECT SUM(Amount) AS Total FROM Transactions_table " +
+        val query = "SELECT SUM(Amount) AS Total FROM ${Constants.TABLE_NAME} " +
                 "WHERE Date LIKE '%-${month}-%' AND Type = 'income' COLLATE NOCASE"
         val cursor = db.rawQuery(query, null)
 
@@ -95,7 +95,7 @@ class DatabaseHelper(context: Context?) : SQLiteOpenHelper(
 
     fun getMonthlyOutcome(month: String): Double {
         val db = this.readableDatabase
-        val query = "SELECT SUM(Amount) AS Total FROM Transactions_table " +
+        val query = "SELECT SUM(Amount) AS Total FROM ${Constants.TABLE_NAME} " +
                 "WHERE Date LIKE '%-${month}-%' AND Type = 'outcome' COLLATE NOCASE"
         val cursor = db.rawQuery(query, null)
 
@@ -109,7 +109,7 @@ class DatabaseHelper(context: Context?) : SQLiteOpenHelper(
     fun getMonthlyDataForChartView(year:String,month: String): LinkedHashMap<Int, Double>? {
         val db = this.readableDatabase
         val query =
-            "select strftime('%d',date) as day,type,SUM(amount) as sum from Transactions_table\n" +
+            "select strftime('%d',date) as day,type,SUM(amount) as sum FROM  ${Constants.TABLE_NAME}\n" +
                     "group by date \n" +
                     "having date LIKE '$year-$month-%'"
 
@@ -120,7 +120,7 @@ class DatabaseHelper(context: Context?) : SQLiteOpenHelper(
             cursor.close()
             return null
         }
-        // cursor.moveToFirst()
+
         while (cursor.moveToNext()) {
 
             val day = cursor.getInt(0)
@@ -136,7 +136,7 @@ class DatabaseHelper(context: Context?) : SQLiteOpenHelper(
 
     fun getMonthsYears(): MutableList<String>? {
         val db = this.readableDatabase
-        val query = "select DISTINCT strftime('%Y-%m',date) as month from Transactions_table"
+        val query = "select DISTINCT strftime('%Y-%m',date) AS month FROM  ${Constants.TABLE_NAME}"
         val list: MutableList<String> = mutableListOf<String>()
         val cursor = db.rawQuery(query, null)
         try {
