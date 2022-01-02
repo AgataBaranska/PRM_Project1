@@ -3,7 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/activity_main.xml" value="0.6" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/background_inputs.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/backround_inputs.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/bg_transaction.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/bg_transaction_income.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/bg_transaction_outcome.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/btn_bacground.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/btn_background.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/btn_save.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_add.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_baseline_arrow_downward_24.xml" value="0.1" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_home.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_income.xml" value="0.1" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_outcome.xml" value="0.1" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/ic_share.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/drawable/test_1.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/activity_add_transaction.xml" value="0.264" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/activity_monthly_statement.xml" value="0.2" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/activity_transaction_edit.xml" value="0.2" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/transaction.xml" value="0.35294117647058826" />
+        <entry key="..\:/Users/baran/AndroidStudioProjects/FinancialManager/app/src/main/res/layout/transaction_edit.xml" value="0.2" />
       </map>
     </option>
   </component>

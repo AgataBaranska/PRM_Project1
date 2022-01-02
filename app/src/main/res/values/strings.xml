@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">FinancialManager</string>
-    <string name="outcomes_incomes">outcomes/incomes</string>
-    <string name="sum">summary</string>
+    <string name="transactions">Recent transactions</string>
+    <string name="income">Income</string>
+    <string name="outcome">Outcome</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="place_hint">PLACE</string>
+    <string name="amount_hint">AMOUNT</string>
+    <string name="date_text">DATE</string>
+    <string name="save_button">Save</string>
+    <string name="select_month">Select month</string>
+
+    <string-array name="transaction_types">
+        <item>OUTCOME</item>
+        <item>INCOME</item>
+
+
+    </string-array>
+    <string-array name="transaction_category">
+        <item>FOOD</item>
+        <item>ENTERTAINMENT</item>
+        <item>HEALTH</item>
+        <item>HOME</item>
+        <item>CLOTHES</item>
+        <item>TRAVEL</item>
+        <item>WORK</item>
+    </string-array>
+
+
 </resources>
